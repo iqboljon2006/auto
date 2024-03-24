@@ -1,0 +1,29 @@
+@import "./variables";
+@import "./mixins";
+@import "./extends";
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: $site-font;
+}
+
+html {
+    height: 100%;
+}
+.container{
+    width: 100%;
+    max-width: 1450px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+main{
+    flex-grow: 1;
+}
+@import "./index";
